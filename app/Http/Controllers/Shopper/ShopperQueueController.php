@@ -87,8 +87,7 @@ class ShopperQueueController extends Controller
 
                 $checkout = Shopper::find($id);
                 $checkout->check_out  = Carbon::now()->toDateTimeString();
-                $checkout->status_id = 2; 
-                
+                $checkout->status_id = 2;                 
                 $checkout->save();
             }
 
